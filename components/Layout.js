@@ -93,12 +93,12 @@ const func=()=>{
    
     <section class="mb-4">
      
-      <a class="btn btn-primary btn-floating m-1" style={{backgroundColor: "#3b5998"}} href="#!" role="button">
+      <a class="btn btn-primary btn-floating m-1" style={{backgroundColor: "#3b5998"}} href="https://www.facebook.com/jeevesh.garg.52" role="button" target='_blank'>
         <FontAwesomeIcon icon={faFacebook} style={{height:"28px", width:"28px"}}></FontAwesomeIcon>
       </a>
 
     
-      <a class="btn btn-primary btn-floating m-1" style={{backgroundColor: "#55acee"}}  href="#!" role="button">
+      <a class="btn btn-primary btn-floating m-1" style={{backgroundColor: "#55acee"}}  href="https://in.linkedin.com/in/jeevesh-garg-2130b3203" role="button" target='_blank'>
       <FontAwesomeIcon icon={faLinkedin} style={{height:"28px", width:"28px"}} ></FontAwesomeIcon>
       </a>
 
@@ -110,12 +110,12 @@ const func=()=>{
       </a>
 
       
-      <a class="btn btn-primary btn-floating m-1" style={{backgroundColor: "#bc2a8d"}}  href="#!" role="button">
+      <a class="btn btn-primary btn-floating m-1" style={{backgroundColor: "#bc2a8d"}}  href="https://www.instagram.com/gargjeevesh60/" role="button" target='_blank'>
      
       <FontAwesomeIcon icon={faInstagram} style={{height:"28px", width:"28px"}} ></FontAwesomeIcon>
       </a>
 
-      <a class="btn btn-primary btn-floating m-1" style={{backgroundColor: "#333333"}}  href="#!" role="button">
+      <a class="btn btn-primary btn-floating m-1" style={{backgroundColor: "#333333"}}  href="https://github.com/JeeveshGarg" role="button" target='_blank'>
       <FontAwesomeIcon icon={faGithub} style={{height:"28px", width:"28px"}} ></FontAwesomeIcon>
       </a>
     </section>

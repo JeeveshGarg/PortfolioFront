@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Timelapse } from '../components/Timelapse'
 import { Blogs } from '../components/Blogs'
 import {Button} from '../components/Button'
-import {Projects} from '../components/Projects'
+import {Works} from '../components/Works'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../node_modules/materialize-css/dist/css/materialize.min.css'
 // import '../node_modules/materialize-css/dist/js/materialize.min.js'
@@ -31,7 +31,7 @@ const work = () => {
 
          
                  </div>
-                <Projects></Projects>
+                <Works></Works>
     </div>
   )
 }

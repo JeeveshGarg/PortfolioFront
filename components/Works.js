@@ -13,15 +13,16 @@ import axios from 'axios'
 import router, { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import { useState } from 'react'
+import { Work } from './Work'
 
 
-export const Projects = () => {
+export const Works = () => {
 const  router=useRouter()
 
   const [projects, setProjects] = React.useState([])
 
   useEffect(() => {
-    axios.get('https://meenaback.herokuapp.com/project/')
+    axios.get('https://meenaback.herokuapp.com/work/')
   .then(res => {
       setProjects(res.data)
      console.log(res.data)
@@ -42,8 +43,8 @@ const  router=useRouter()
           </Head>
         <div class="row">
           <div>
-            { router.pathname === '/' ? projects.filter((project,index) => index < 3).map(project=> <Project key={project.id} name={project.name} desc={project.description} need={project.need} webter={project.web} gitnew={project.github} image={project.image} tags={project.tags}/> ) : projects.map(project => (
-              <Project key={project.id} name={project.name} desc={project.description} need={project.need} webter={project.web} gitnew={project.github} image={project.image} tags={project.tags}/>
+            { projects.map(project => (
+              <Work key={project.id} name={project.name} desc={project.description} need={project.timeperiod} web={project.web}  image={project.image} tags={project.tags}/>
             )) }
 
           

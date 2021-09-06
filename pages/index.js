@@ -104,7 +104,7 @@ export default function Home() {
      </div>
 
      <Projects></Projects>
-     <Button></Button>
+     <Button btn={"/projects"}></Button>
       
     </div>
   )

@@ -12,23 +12,9 @@ import axios from 'axios'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 
-export const Project = ({name,desc,need,webter,gitnew,image,tags}) => {
-    const [stars, setStars] = React.useState("");
-    const [forks, setforks] = React.useState("");
-    const [git, setgit] = React.useState("");
-
-    useEffect(() => {
-      axios.get(`https://api.github.com/repos/JeeveshGarg/${gitnew}`)
-  .then(res => {
-      setgit(res.data.html_url);
-      setStars(`https://img.shields.io/github/stars/JeeveshGarg/${gitnew}?style=flat-square`);
-      setforks(`https://img.shields.io/github/forks/JeeveshGarg/${gitnew}?style=flat-square`);
-  })
-  .catch(err => {
-      console.log(err)
-  })
-     
-    }, [])
+export const Work = ({name,desc,need,webter,image,tags}) => {
+   
+   
    
     
     return (
@@ -40,14 +26,12 @@ export const Project = ({name,desc,need,webter,gitnew,image,tags}) => {
       <div class=" text-left">
       <div class="card  hoverable">
       <div  className={styles.meta}>
-    <div  className={styles.photo} style={{backgroundImage: `url(https://meenaback.herokuapp.com${image})`}} ></div>
+      <div  className={styles.photo} style={{backgroundImage: `url(${image})`}} ></div>
     
   </div>
   <div class="card-content">
-  <img src = {stars} alt="Github Repo Star" style={{marginRight:"20px",
-    marginBottom:"15px"}}></img>
-      <img src={forks} alt="Github Repo Star" style={{marginRight:"20px",
-    marginBottom:"15px"}}></img>
+   <div style={{marginRight:"20px",
+    marginBottom:"15px"}}><strong>{need}</strong></div>
       <div>
      
      {tags.map(tag => (
@@ -65,15 +49,14 @@ export const Project = ({name,desc,need,webter,gitnew,image,tags}) => {
       </span>
       <div className={styles.card}>
       <span><a className={styles.website}  href={""+ webter} target='_blank'>Website</a></span>
-        <span><a className={styles.github} href={git}>Github</a></span>
+        
       </div>
   </div>
   <div class="card-reveal">
   <span class="card-title grey-text text-darken-4">{name}<i class="material-icons right">close</i></span>
       <div><span className={styles.status}>Live</span></div>
       <p>{desc}</p>
-      <p><strong>Need:</strong></p>
-      <p>{need}</p>
+      
   </div>
 </div>
 </div>

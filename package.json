@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p SPORT",
+    "heroku-postbuild": "npm run build && cp -r build/. next/ && rm -rf build",
     "lint": "next lint"
   },
   "dependencies": {
@@ -20,7 +21,8 @@
     "next": "11.1.0",
     "node-sass": "^4.14.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-router-dom": "^5.3.0"
   },
   "devDependencies": {
     "ember-cli-materialize": "^0.22.0",
