@@ -36,12 +36,12 @@ const  router=useRouter()
    
 
     return (
-        <div class="container text-center">
+        <div className="container text-center">
           <Head>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> */}
         
           </Head>
-        <div class="row">
+        <div className="row">
           <div>
             { projects.map(project => (
               <Work key={project.id} name={project.name} desc={project.description} need={project.timeperiod} web={project.web}  image={project.image} tags={project.tags}/>

@@ -36,23 +36,19 @@ const func=()=>{
         <Head>
           <title>My page</title>
           <link rel="icon" href="/favicon.ico" />
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
-       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-       <script type="text/javascript" src="js/materialize.min.js"></script>
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"></link>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></link>
-        <script src="https://kit.fontawesome.com/e20sdfsd9.js" crossOrigin="anonymous"></script>
+     
        
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"></link>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-      
+       
+        
+       
+
         </Head>
             <nav >
   <div className={styles.navbar} >
     
     <div className={styles.logo}>JG</div>
     <div className={styles.burger}>
-      {collesped ?  <span class="material-icons" className={styles.icon}  onClick={func}>menu</span> :  <span class="material-icons" className={styles.icon}  onClick={()=>{func()}}>close</span> }
+      {collesped ?  <span className={`material-icons ${styles.icon}`}   onClick={func}>menu</span> :  <span className={`material-icons ${styles.icon}`}   onClick={()=>{func()}}>close</span> }
    
     </div>
     <ul  className={styles.navList} >
@@ -86,36 +82,36 @@ const func=()=>{
     {children}
   </div>
 
-  <footer class="text-center text-white" style={{backgroundColor:"#023047"}}>
+  <footer className="text-center text-white" style={{backgroundColor:"#023047"}}>
  
-  <div class="container p-4">
+  <div className="container p-4">
 
    
-    <section class="mb-4">
+    <section className="mb-4">
      
-      <a class="btn btn-primary btn-floating m-1" style={{backgroundColor: "#3b5998"}} href="https://www.facebook.com/jeevesh.garg.52" role="button" target='_blank'>
+      <a className="btn btn-primary btn-floating m-1" style={{backgroundColor: "#3b5998"}} href="https://www.facebook.com/jeevesh.garg.52" role="button" target='_blank' rel="noreferrer">
         <FontAwesomeIcon icon={faFacebook} style={{height:"28px", width:"28px"}}></FontAwesomeIcon>
       </a>
 
     
-      <a class="btn btn-primary btn-floating m-1" style={{backgroundColor: "#55acee"}}  href="https://in.linkedin.com/in/jeevesh-garg-2130b3203" role="button" target='_blank'>
+      <a className="btn btn-primary btn-floating m-1" style={{backgroundColor: "#55acee"}}  href="https://in.linkedin.com/in/jeevesh-garg-2130b3203" role="button" target='_blank' rel="noreferrer">
       <FontAwesomeIcon icon={faLinkedin} style={{height:"28px", width:"28px"}} ></FontAwesomeIcon>
       </a>
 
     
 
       
-      <a class="btn btn-primary btn-floating m-1" style={{backgroundColor: "red"}}  href="mailto:jeevesh.garg.cd.civ20@itbhu.ac.in">
+      <a className="btn btn-primary btn-floating m-1" style={{backgroundColor: "red"}}  href="mailto:jeevesh.garg.cd.civ20@itbhu.ac.in">
       <FontAwesomeIcon icon={faMailBulk} style={{height:"28px", width:"28px"}} ></FontAwesomeIcon>
       </a>
 
       
-      <a class="btn btn-primary btn-floating m-1" style={{backgroundColor: "#bc2a8d"}}  href="https://www.instagram.com/gargjeevesh60/" role="button" target='_blank'>
+      <a className="btn btn-primary btn-floating m-1" style={{backgroundColor: "#bc2a8d"}}  href="https://www.instagram.com/gargjeevesh60/" role="button" target='_blank' rel="noreferrer">
      
       <FontAwesomeIcon icon={faInstagram} style={{height:"28px", width:"28px"}} ></FontAwesomeIcon>
       </a>
 
-      <a class="btn btn-primary btn-floating m-1" style={{backgroundColor: "#333333"}}  href="https://github.com/JeeveshGarg" role="button" target='_blank'>
+      <a className="btn btn-primary btn-floating m-1" style={{backgroundColor: "#333333"}}  href="https://github.com/JeeveshGarg" role="button" target='_blank'  rel="noreferrer">
       <FontAwesomeIcon icon={faGithub} style={{height:"28px", width:"28px"}} ></FontAwesomeIcon>
       </a>
     </section>
@@ -130,7 +126,7 @@ const func=()=>{
 
   </div>
  
-  <div class="text-center p-3" style={{backgroundColor: "rgba(0, 0, 0, 0.2)", color:"#FB8500"}} >
+  <div className="text-center p-3" style={{backgroundColor: "rgba(0, 0, 0, 0.2)", color:"#FB8500"}} >
     © 2021 Copyright:
     <span  style={{ color:"#FB8500", textDecoration:"none"}} > Jeevesh Garg</span>
   </div>

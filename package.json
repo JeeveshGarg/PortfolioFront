@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p SPORT",
-    "heroku-postbuild": "npm run build && cp -r build/. next/ && rm -rf build",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {

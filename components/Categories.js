@@ -31,8 +31,8 @@ export const Categories = () => {
    
 
     return (
-        <div class="container text-center">
-        <div class="row">
+        <div className="container text-center">
+        <div className="row">
           <div>
 
             {categories.map(category => (

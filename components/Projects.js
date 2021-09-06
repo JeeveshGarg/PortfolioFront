@@ -35,12 +35,12 @@ const  router=useRouter()
    
 
     return (
-        <div class="container text-center">
+        <div className="container text-center">
           <Head>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        {/* <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> */}
         
           </Head>
-        <div class="row">
+        <div className="row">
           <div>
             { router.pathname === '/' ? projects.filter((project,index) => index < 3).map(project=> <Project key={project.id} name={project.name} desc={project.description} need={project.need} webter={project.web} gitnew={project.github} image={project.image} tags={project.tags}/> ) : projects.map(project => (
               <Project key={project.id} name={project.name} desc={project.description} need={project.need} webter={project.web} gitnew={project.github} image={project.image} tags={project.tags}/>

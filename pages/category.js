@@ -13,16 +13,16 @@ import '../node_modules/materialize-css/dist/css/materialize.min.css'
 
 const category = () => {
   return (
-    <div class="text-center">
+    <div className="text-center">
       
-       <div class="container ">
-       <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section_title_all text-center">
-                            <h4 class="font-weight-bold" style={{marginTop:"10vh"}}>Categories I Have Experience</h4>
+       <div className="container ">
+       <div className="row">
+                    <div className="col-lg-12">
+                        <div className="section_title_all text-center">
+                            <h4 className="font-weight-bold" style={{marginTop:"10vh"}}>Categories I Have Experience</h4>
                             
-                            <div class="">
-                                <i class=""></i>
+                            <div className="">
+                                <i className=""></i>
                             </div>
                         </div>
                     </div>

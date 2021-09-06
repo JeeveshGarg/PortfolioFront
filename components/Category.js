@@ -7,17 +7,17 @@ import '../node_modules/materialize-css/dist/css/materialize.min.css'
 
 export const Category = ({name,color,image,description,web}) => {
     return (
-        <div class="col m4">
+        <div className="col m4">
             
-            <div class=" text-left">
+            <div className=" text-left">
             
 
-    <div class="card hoverable">
+    <div className="card hoverable">
     <div  className={styles.meta}>
       <div  className={styles.photo} style={{backgroundImage: `url(${image})`}} ></div>
       
     </div>
-      <div class="card-content">
+      <div className="card-content">
       <div>
         <div className={styles.icon}>
     <span style={{backgroundColor:color}}>{description}</span>
@@ -26,12 +26,12 @@ export const Category = ({name,color,image,description,web}) => {
         </div>
         
        
-        <span class="card-title activator grey-text text-darken-4">
+        <span className="card-title activator grey-text text-darken-4">
          {name}
          
         </span>
         <div className={styles.card}>
-        <span><a className={styles.website}  href={web} target='_blank'>Website</a></span>
+        <span><a className={styles.website}  href={web} target='_blank' rel="noreferrer">Website</a></span>
          
         </div>
       </div>

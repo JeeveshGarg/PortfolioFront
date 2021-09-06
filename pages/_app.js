@@ -3,7 +3,7 @@ import { Layout } from '../components/Layout'
 import Head from 'next/head'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../node_modules/materialize-css/dist/css/materialize.min.css'
-// import '../node_modules/materialize-css/dist/js/materialize.min.js'
+
 
 
 function MyApp({ Component, pageProps }) {
@@ -14,13 +14,7 @@ function MyApp({ Component, pageProps }) {
 <title>Home</title>
 <link rel="icon" href="/favicon.ico" />
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
-
-{/* <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"></link>
-
-<script src="https://kit.fontawesome.com/e20sdfsd9.js" crossOrigin="anonymous"></script> */}
-
-{/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"></link>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> */}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossOrigin="anonymous"></link>
 
 
 </Head>
