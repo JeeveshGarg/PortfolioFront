@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+$primary-1: #1C829C;
+$primary-2: #79C1E2;
+$color-1: #023047;
+$secondary-1: #FFB703;
+$secondary-2: #FB8500;
+$text-color: #F2F2F2;
+
+$small-treshold: 800px;
+
+$transition-function: cubic-bezier(0.22, 1, 0.36, 1);
+
+
+
+.navbar{
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0 2rem;
+  background: $color-1;
+  // position: fixed;
+  
+  @media (max-width: $small-treshold){
+    padding: 0 2rem;
+  }
+  
+  .logo{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #FB8500;
+  }
+  
+  .burger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    color: #FB8500;
+    
+    @media (max-width: $small-treshold){
+      display: flex;
+    }
+  }
+  
+  .icon{
+    font-size: 2rem;
+    user-select: none;
+    cursor: pointer;
+    transition: color 0.5s $transition-function;
+    color: $secondary-2;
+  }
+  .icon:hover{
+    color: $secondary-2;
+  }
+  .icon:active{
+    color: $secondary-1;
+  }
+  
+  ul{
+    display: flex;
+    @media (max-width: $small-treshold){
+      display: none;
+    }
+    
+    a{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem 2rem;
+      color: $text-color;
+      text-decoration: none;
+      
+      &:hover{
+        background: $primary-1;
+        color: $text-color;
+        text-decoration: none;
+      }
+      
+      &:active{
+        background: $primary-2;
+        color: $text-color;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.dropdown{
+  position: absolute;
+  width: 100%;
+  background: $color-1;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s $transition-function;
+  
+  ul{
+    display: flex;
+    flex-direction: column;
+    color: $text-color;
+        text-decoration: none;
+  }
+  
+  a{
+    display: block;
+    padding: 1rem 2rem;
+    color: $text-color;
+        text-decoration: none;
+
+    &:hover{
+      background: $primary-1;
+      color: $text-color;
+        text-decoration: none;
+    }
+
+    &:active{
+      background: $primary-2;
+      color: $text-color;
+        text-decoration: none;
+    }
+  }
+}
+
+// .container{
+//   max-width: 960px;
+// }
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

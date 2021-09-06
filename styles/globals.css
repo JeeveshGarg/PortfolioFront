@@ -1,0 +1,39 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  /* color: #F2F2F2; */
+  color: #023047;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+nav{
+  position: relative;
+  
+}
+
+
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+nav{
+  z-index: 1000;
+}

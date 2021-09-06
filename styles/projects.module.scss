@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  .meta {
+    position: relative;
+    z-index: 0;
+    height: 200px;
+  }
+  .photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform .2s;
+    border: none;
+  }
+  
+  
+  .icon {
+    font-size: .9rem;
+    display: inline-flex;
+    background: #D8D8D8;
+    border-radius: 3px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    span {
+      border-radius: 5px;
+      padding: 3px 5px;
+    };
+  }
+  
+  .react {
+    background: #BAD5F5;
+    span::after {
+      content: "React.js";
+    }
+  }
+  
+  .express {
+    background: #F2C986;
+    span::after {
+      content: "Express";
+    }
+  }
+  
+  .node {
+    background: #E1C1C1;
+    span::after {
+      content: "Node.js";
+    }
+  }
+  
+  .python {
+    background: #EADD86;
+    span::after {
+      content: "Python";
+    }
+  }
+  
+  .django {
+    background: #eaccaf;
+    span::after {
+      content: "Django";
+    }
+  }
+  
+  .card {
+    a {
+      padding-right: 15px;
+      text-decoration: none;
+    } 
+  }
+  
+  .github {
+    color: #739150;
+    text-decoration-line: none;
+    padding-right: 15px;
+    
+  }
+  .website {
+    color: rgb(106, 191, 219);
+    text-decoration-line: none;
+    padding-right: 15px;
+    
+  }
+  
+  .status {
+    color: #7699C2;
+  }

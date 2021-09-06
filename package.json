@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.15",
+    "@material-ui/core": "^4.12.3",
+    "axios": "^0.21.3",
+    "bootstrap": "^5.0.0-beta3",
+    "materialize-css": "^1.0.0-rc.2",
+    "next": "11.1.0",
+    "node-sass": "^4.14.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "ember-cli-materialize": "^0.22.0",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.0"
+  }
+}
