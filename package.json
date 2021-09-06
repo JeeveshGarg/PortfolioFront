@@ -27,5 +27,6 @@
     "ember-cli-materialize": "^0.22.0",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.0"
-  }
+  },
+  "proxy": "https://meenaback.herokuapp.com"
 }

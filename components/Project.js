@@ -41,7 +41,7 @@ export const Project = ({name,desc,need,webter,gitnew,image,tags}) => {
       <div className=" text-left">
       <div className="card  hoverable">
       <div  className={styles.meta}>
-    <div  className={styles.photo} style={{backgroundImage: `url(https://meenaback.herokuapp.com${image})`}} ></div>
+      <div  className={styles.photo} style={{backgroundImage: `url(${image})`}} ></div>
     
   </div>
   <div className="card-content">
