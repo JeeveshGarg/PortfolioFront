@@ -44,7 +44,7 @@ const  router=useRouter()
         <div className="row">
           <div>
             { projects.map(project => (
-              <Work key={project.id} name={project.name} desc={project.description} need={project.timeperiod} web={project.web}  image={project.image} tags={project.tags}/>
+              <Work key={project.id} name={project.name} desc={project.description} need={project.timeperiod} webter={project.web}  image={project.image} tags={project.tags}/>
             )) }
 
           
